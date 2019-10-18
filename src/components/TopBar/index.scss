@@ -1,0 +1,52 @@
+@import "./fonts/iconfont.css";
+.top-bar {
+  height: 36px;
+  padding-left: 10px;
+  color: #333333;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  -webkit-app-region: drag;
+  .left {
+    display: flex;
+    .header {
+      font-size: 18px;
+    }
+    .menu {
+      margin-left: 20px;
+      list-style-type: none;
+      display: flex;
+      li {
+        cursor: pointer;
+        padding: 0 20px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    -webkit-app-region: no-drag;
+    .minimize,
+    .maximize,
+    .restore {
+      height: 36px;
+      line-height: 36px;
+      padding: 0 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: #c6c6c6;
+      }
+    }
+    .close {
+      height: 36px;
+      line-height: 36px;
+      padding: 0 10px;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+        background-color: #e72536;
+      }
+    }
+  }
+}

@@ -1,17 +1,16 @@
 <template>
   <div>
-    <button @click="closed">关闭</button>
+    <TopBar />
   </div>
 </template>
 
 <script>
+import TopBar from "@/components/TopBar/index.vue";
 export default {
-  methods: {
-    closed() {
-      const { ipcRenderer } = this.$electron;
-      ipcRenderer.send("close");
-    }
-  }
+  components: {
+    TopBar
+  },
+  methods: {}
 };
 </script>
 

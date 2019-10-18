@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './assest/styles/common.scss'
+
 Vue.config.productionTip = false
 Vue.prototype.$electron = window.electron
 
