@@ -1,0 +1,45 @@
+{
+  "name": "namecho-window",
+  "version": "0.1.0",
+  "private": true,
+  "main": "app/main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "start": "vue-cli-service build && electron app/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.12.0",
+    "electron": "^6.0.12",
+    "electron-builder": "^21.2.0",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "build": {
+    "appId": "com.namecho.app",
+    "productName": "namecho",
+    "win": {
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "build"
+    }
+  }
+}
